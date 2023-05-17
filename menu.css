@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Farro:wght@700&family=Inconsolata:wght@300;400;500;600;700;800&family=Lily+Script+One&family=Lobster&family=Montserrat:wght@100;200;300;400;500;600&family=Oleo+Script:wght@400;700&family=Rye&family=Skranji:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Farro:wght@700&family=Inconsolata:wght@300;400;500;600;700;800&family=Lily+Script+One&family=Lobster&family=Montserrat:wght@100;200;300;400;500;600;700&family=Oleo+Script:wght@400;700&family=Rye&family=Skranji:wght@400;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{ 
+    margin: 0;
+    padding: 0;
+}
+.background-1{
+    width: 100%;
+    height: 320vh;
+    background: rgba(0,0,0,0.3) url(images/menu-background.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+#header{
+    position: relative;
+    left: 50px;
+    padding-top: 230px;
+    margin-bottom: 150px;
+    width: 1400px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Oleo Script', cursive;
+    font-size: 8rem;
+    letter-spacing: 20px;
+    -webkit-text-fill-color: rgba(105, 56, 0, 0.331);
+    -webkit-text-stroke-width: 0.2rem;
+    z-index: 1;
+}
+#tea{
+    color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgba(0, 196, 59, 0.331);
+    -webkit-text-stroke-width: 0.2rem;
+}
+#menu-header{
+    color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.331);
+    -webkit-text-stroke-width: 0.2rem;
+}
+.nav-btn{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F0F6F7FF;
+    z-index: 3;
+}
+#home,#menu,#gallery,#about,#contact{
+    color: rgb(96, 43, 0);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-decoration: none;
+}
+#home:after,
+#menu:after,
+#gallery:after,
+#about:after,
+#contact:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(96, 43, 0);
+    transform: scale(0,1);
+    transition: transform 0.3s ease;
+}
+#home:hover,
+#menu:hover,
+#gallery:hover,
+#about:hover,
+#contact:hover{
+    color: rgb(40, 151, 0);
+}
+#home:hover:after,
+#menu:hover:after,
+#gallery:hover:after,
+#about:hover:after,
+#contact:hover:after{
+    transform: scale(1,1);
+}
+#home{
+    position: absolute;
+    right: 600px;
+}
+#menu{
+    position: absolute;
+    right: 530px;
+}
+#gallery{
+    position: absolute;
+    right: 450px;
+}
+#contact{
+    position: absolute;
+    right: 360px;
+}
+#about{
+    position: absolute;
+    right: 290px;
+}
+#title{
+    position: relative;
+    top: 2px;
+    right: 610px;
+    width: 100px;
+}
+#template1{
+    position: relative;
+    left: 1010px;
+    bottom: 20%;
+}
+#hr1{
+    position: relative;
+    bottom: 490px;
+}
+.nav-btn2{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    top: 780px;
+    left: 40px;
+}
+#milktea,#frappe,#fruitteas,#coffee{
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+#milktea:hover,#frappe:hover,#fruitteas:hover,#coffee:hover{
+    text-decoration: underline rgb(255, 255, 255);
+    color: rgb(162, 84, 0);
+}
+.milktea-container{
+    color: white;
+    position: absolute;
+    top: 950px;
+    left: 240px;
+}
+#menu-header1{
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 5.4rem;
+}
+#milktea-img{
+    position: absolute;
+    top: 125px;
+    left: 550px;
+    width: 500px;
+}
+#hr2{
+    height: 3px;
+    width: 500px;
+    margin-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.milktea-list{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.size{
+    margin-top: 90px;
+    font-family: 'Montserrat', sans-serif;
+}
+#price{
+    font-weight: normal;
+    font-size: 3.5rem;
+    margin-bottom: 2px;
+}
+#hr3,#hr4{
+    width: 450px;
+    margin-bottom: 40px;
+}
+.size-list{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.size-price{
+    position: absolute;
+    top: 940px;
+    left: 350px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.extra-container{
+    position: absolute;
+    top: 780px;
+    left: 570px;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.extra-list{
+    font-weight: lighter;
+    font-size: 2rem;
+}
+#extra{
+    font-weight: normal;
+    font-size: 3.5rem;
+    margin-bottom: 2px;
+}
+.extra-price{
+    position: absolute;
+    top: 113px;
+    left: 350px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.frappe-container{
+    color: white;
+    position: relative;
+    margin-left: 180px;
+    top: 200px;
+}
+#menu-header2{
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 5.4rem;
+}
+#hr6{
+    height: 3px;
+    width: 1140px;
+    margin-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.frappe-name-list{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.flavor-list{
+    position: absolute;
+    top: 160px;
+    left: 330px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.frappe-price{
+    position: absolute;
+    top: 160px;
+    left: 970px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+#hr7{
+    position: relative;
+    top: 400px;
+}
+.fruitteas-container{
+    color: white;
+    position: relative;
+    margin-left: 180px;
+    top: 630px;
+}
+#menu-header3{
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 5.4rem;
+}
+#hr8{
+    height: 3px;
+    width: 600px;
+    margin-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.jelly-container{
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+#boba{
+    color: rgb(208, 97, 0);
+    font-size: 2.1rem;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+#fruitteas-img{
+    position: absolute;
+    top: 70px;
+    left: 690px;
+    width: 450px;
+}
+.variety-1{
+    position: absolute;
+    top: 230px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.boba-jelly-price{
+    position: absolute;
+    top: 230px;
+    left: 470px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.chia-seed-container{
+    position: absolute;
+    top: 4520px;
+    right: 200px;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+#chia{
+    position: relative;
+    left: 370px;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: rgb(208, 97, 0);
+    font-size: 2.1rem;
+    font-weight: normal;
+}
+#hr9{
+    width: 650px;
+    margin-bottom: 50px;
+}
+.variety-2{
+    position: absolute;
+    margin-left: 40px;
+    top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+#chia-seeds{
+    position: absolute;
+    top: 4600px;
+    left: 150px;
+    height: 80vh;
+    width: 450px;
+}
+.chia-price{
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+#hr10{
+    position: relative;
+    top: 650px;
+}
+.coffee-container{
+    color: white;
+    position: relative;
+    margin-left: 140px;
+    top: 800px;
+}
+#hr11{
+    height: 3px;
+    width: 680px;
+    margin-bottom: 70px;
+    background-color: rgb(255, 255, 255);
+}
+.Coffee-list{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+#hot1{
+    position: absolute;
+    top: 140px;
+    left: 460px;
+    color: rgb(208, 97, 0);
+    font-size: 2.1rem;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+#iced1{
+    position: absolute;
+    top: 140px;
+    left: 580px;
+    color: rgb(208, 97, 0);
+    font-size: 2.1rem;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+#hr12{
+    width: 680px;
+    margin-bottom: 20px;
+}
+.hot-coffee-price{
+    position: absolute;
+    top: 200px;
+    left: 465px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.iced-coffee-price{
+    position: absolute;
+    top: 200px;
+    left: 590px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+#coffee-img{
+    position: absolute;
+    top:80px;
+    right: 170px;
+    width: 470px;
+}
+.non-coffee-container{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: relative;
+    left: 550px;
+    top: 880px;
+}
+#menu-header4{
+    position: relative;
+    left: 270px;
+    display: inline;
+    font-weight: normal;
+    font-size: 5.4rem;
+}
+#hr13{
+    width: 800px;
+    height: 3px;    
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 70px;
+}
+.non-coffee-list{
+    margin-left: 30px;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+#hr14{
+    width: 800px;
+    margin-bottom: 20px;
+}
+#hot2{
+    position: absolute;
+    top: 140px;
+    left: 540px;
+    color: rgb(208, 97, 0);
+    font-size: 2.1rem;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+#iced2  {
+    position: absolute;
+    top: 140px;
+    left: 680px;
+    color: rgb(208, 97, 0);
+    font-size: 2.1rem;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+.hot-choco-price{
+    position: absolute;
+    top: 200px;
+    left: 550px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.iced-choco-price{
+    position: absolute;
+    top: 200px;
+    left: 690px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+#chocolate{
+        position: absolute;
+        right: 850px;
+        width: 50vh;
+}

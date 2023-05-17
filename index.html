@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>D'Tea & Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
+    <!--icon link-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--Animate on Scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script type="text/javascript" src="final.js"></script>
+  </head>
+  <body>
+    <div class="background">
+      <h1 id="header" data-aos="fade-down">
+        D'<span id="tea">Tea</span> & Coffee
+      </h1>
+      <div class="nav-btn">
+        <a href="index.html">
+          <img id="title" src="images/p1-removebg-preview.png" alt="" />
+        </a>
+        <a id="home" href="index.html">Home</a>
+        <a id="menu" href="menu.html">Menu</a>
+        <a id="gallery" href="gallery.html">Gallery</a>
+        <a id="contact" href="contact.html">Contact</a>
+        <a id="about" href="about.html">About</a>
+      </div>
+
+      <div class="background-2">
+        <!--content1-->
+        <div class="content-1" data-aos="fade-left">
+          <h2 id="quote-1">
+            <span id="sip">SIP</span>, <span id="smile">SMILE</span>, AND
+            <span id="repeat">REPEAT</span> WITH OUR HEAVENLY MILKTEA AND
+            FRAPPES
+          </h2>
+          <div class="address">
+            <p>San Pedro 1 2011</p>
+            <p>Magalang,</p>
+            <p>Philippines</p>
+            <p id="phone-num">
+              <i class="bx bx-phone bx-fw" id="phone-icon"></i>:
+            </p>
+          </div>
+        </div>
+        <video
+          data-aos="fade-down"
+          id="vid-1"
+          src="images/vid1.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+      </div>
+      <!--content2-->
+      <div class="content-2" data-aos="fade-left">
+        <p>
+          Are you looking for a refreshing and satisfying beverage to quench
+          your thirst? Look no further than our D'Tea & Coffee!
+        </p>
+      </div>
+      <video
+        data-aos="fade-right"
+        id="vid-2"
+        src="images/vid2.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+      <!--content3-->
+      <div class="content-3" data-aos="fade-right" data-aos-duration="1000">
+        <p>
+          So come and visit us today and experience the perfect blend of flavors
+          and quality at our D'Tea and Coffee. We're sure you'll love it!
+        </p>
+      </div>
+      <video
+        data-aos="fade-left"
+        id="vid-3"
+        src="images/vid3.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+    </div>
+    <!--Sign Up-->
+    <div class="logIn-container">
+      <h1 id="get-updates">GET UPDATES ON THE MENU, EVENTS & SPECIAL OFFERS</h1>
+      <p id="sign-up">Sign up to receive our menu:</p>
+      <p id="email">Email*</p>
+      <input id="email-box" type="email" placeholder="Enter your email here" />
+      <button id="subscribe" onclick="subscribe()">Subscribe Now</button>
+      <p id="thanks"></p>
+    </div>
+    <!--footer-->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>D'Tea & Coffee</p>
+        <p>San Pedro 1 2011 Magalang, Philippines</p>
+        <p>Phone: 09630844782</p>
+        <p>Connect with us:</p>
+        <a
+          href="https://www.facebook.com/profile.php?id=100067004650336"
+          target="_blank"
+        >
+          <i
+            id="fb-icon"
+            class="bx bxl-facebook-circle bx-sm"
+            style="color: #ffffff"
+          ></i>
+        </a>
+        <p id="visiting">Thank you for visiting our website!</p>
+      </div>
+    </footer>
+
+    <!--Script Animate on scroll-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+  </body>
+</html>

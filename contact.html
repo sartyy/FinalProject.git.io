@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>D'Tea Milktea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="contact.css" />
+    <script type="text/javascript" src="final.js"></script>
+  </head>
+  <body>
+    <div class="nav-btn">
+      <a href="index.html">
+        <img id="title" src="images/p1-removebg-preview.png" alt="" />
+      </a>
+      <a id="home" href="index.html">Home</a>
+      <a id="menu" href="menu.html">Menu</a>
+      <a id="gallery" href="gallery.html">Gallery</a>
+      <a id="contact" href="contact.html">Contact</a>
+      <a id="about" href="about.html">About</a>
+    </div>
+
+    <div class="background">
+      <h1 id="contact-header">Contact</h1>
+      <hr id="hr1" />
+
+      <div class="location">
+        <h1 id="loc">LOCATION</h1>
+        <p id="store-address">San Pedro 1 2011 Magalang, Philippines</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234.98419260771325!2d120.65936695724054!3d15.214205488418465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396eee6a784710f%3A0xa7f65a109a3c883f!2sGabee&#39;%20S%20House%20Of%20Unlimited!5e1!3m2!1sen!2sph!4v1684106737080!5m2!1sen!2sph"
+          width="1000"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <h1 id="inquiries">FOR INQUIRIES</h1>
+        <p id="number">
+          09630844782 |
+          <a
+            id="fb-site"
+            href="https://www.facebook.com/profile.php?id=100067004650336&sk=about"
+            >Facebook Page</a
+          >
+        </p>
+
+        <div class="inquiries-up-form">
+          <div class="fname-container">
+            <p id="fname">First name<span>*</span></p>
+            <input id="fname-fill-up" type="text" />
+          </div>
+          <div class="lname-container">
+            <p id="lname">Last name<span>*</span></p>
+            <input id="lname-fill-up" type="text" />
+          </div>
+          <div class="email-container">
+            <p id="email">Email<span>*</span></p>
+            <input id="email-fill-up" type="email" />
+          </div>
+          <div class="message-container">
+            <p id="message">Message</p>
+            <input id="message-fill-up" type="text" />
+          </div>
+        </div>
+        <button id="submit" onclick="submit()">Submit</button>
+        <p id="thanks2"></p>
+      </div>
+    </div>
+  </body>
+</html>

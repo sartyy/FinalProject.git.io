@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Farro:wght@700&family=Inconsolata:wght@300;400;500;600;700;800&family=Jockey+One&family=Lily+Script+One&family=Lobster&family=Montserrat:wght@100;200;300;400;500;600;700&family=Oleo+Script:wght@400;700&family=Rye&family=Skranji:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Farro:wght@700&family=Inconsolata:wght@300;400;500;600;700;800&family=Lily+Script+One&family=Lobster&family=Montserrat:wght@100;200;300;400;500;600;700&family=Oleo+Script:wght@400;700&family=Rye&family=Skranji:wght@400;700&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+}
+.background{
+    width: 100%;
+    height: 350vh;
+    background: rgba(0,0,0,0.3) url(images/bg-3.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.nav-btn{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F0F6F7FF;
+    z-index: 3;
+}
+#home,#menu,#gallery,#about,#contact{
+    color: rgb(96, 43, 0);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-decoration: none;
+}
+#home:after,
+#menu:after,
+#gallery:after,
+#about:after,
+#contact:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(96, 43, 0);
+    transform: scale(0,1);
+    transition: transform 0.3s ease;
+}
+#home:hover,
+#menu:hover,
+#gallery:hover,
+#about:hover,
+#contact:hover{
+    color: rgb(40, 151, 0);
+}
+#home:hover:after,
+#menu:hover:after,
+#gallery:hover:after,
+#about:hover:after,
+#contact:hover:after{
+    transform: scale(1,1);
+}
+#home{
+    position: absolute;
+    right: 600px;
+}
+#menu{
+    position: absolute;
+    right: 530px;
+}
+#gallery{
+    position: absolute;
+    right: 450px;
+}
+#contact{
+    position: absolute;
+    right: 360px;
+}
+#about{
+    position: absolute;
+    right: 290px;
+}
+#title{
+    position: relative;
+    top: 2px;
+    right: 610px;
+    width: 100px;
+}
+#contact-header{
+    position: relative;
+    top: 280px;
+    left: 120px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 5.4rem;
+    display: inline-block;
+}
+#hr1{
+    position: relative;
+    top: 280px;
+    left: 120px;
+    height: 3px;
+    width: 500px;
+    margin-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.location{
+    margin: auto;
+    margin-top: 330px;
+    padding-top: 100px;
+    height: 1600px;
+    width: 80%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(10, 126, 107, 0.737);
+}
+#loc{
+    font-family: 'Jockey One', sans-serif;
+    color: rgb(255, 145, 0);
+    font-weight: normal;
+    font-size: 3.5rem;
+}
+#store-address{
+    font-size: 1rem;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+#inquiries{
+    margin-top: 110px;
+    font-family: 'Jockey One', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-size: 3.5rem;
+}
+#number{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+#fb-site{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+#fb-site:hover{
+    color: rgb(94, 255, 86);
+}
+.inquiries-up-form{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-align: start;
+    margin-left: 180px;
+    font-weight: normal;
+    margin-top: 70px;
+}
+#fname-fill-up{
+    font-size: 1.2rem;
+    width: 40%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: rgb(255, 255, 255);
+    background-color: rgba(10, 126, 107, 0);
+}
+#fname-fill-up:hover{
+    border-bottom: 3.5px solid white;
+}
+#lname-fill-up:hover{
+    border-bottom: 3.5px solid white;
+}
+#email-fill-up:hover{
+    border-bottom: 3.5px solid white;
+}
+#message-fill-up:hover{
+    border-bottom: 3.5px solid white;
+}
+.lname-container{
+    position: relative;
+    bottom: 62px;
+    left: 460px;
+    display: inline-block;
+}
+#lname-fill-up{
+    width: 177%;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid white;
+    background-color: rgba(10, 126, 107, 0);
+}
+#email-fill-up{
+    width: 84.5%;
+    height: 45px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid white;
+    background-color: rgba(10, 126, 107, 0);
+}
+#message-fill-up{
+    width: 84.5%;
+    height: 80px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid white;
+    background-color: rgba(10, 126, 107, 0);
+}
+.message-container{
+    margin-top: 30px;
+}
+span{
+    color: rgb(216, 90, 0);
+    font-size: 1.5rem;
+}
+#submit{
+    margin-top: 40px;
+    height: 50px;
+    width: 200px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.201);
+    border: 2px solid white;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: rgb(160, 104, 0);
+    border: 1px solid rgb(255, 255, 255);
+}
+#thanks2{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
